@@ -1,0 +1,6 @@
+.main {
+    max-width: 200px;
+    margin: 25px auto !important;
+    float: none !important;
+    horiz-align: center;
+}

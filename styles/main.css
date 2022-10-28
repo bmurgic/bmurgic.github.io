@@ -1,4 +1,42 @@
-@import "fonts.css";
+/*
+  List out all of the fonts of the website
+*/
+
+@font-face {
+  font-family: 'Cabin-Sketch';
+  src: url('../fonts/Cabin_Sketch/CabinSketch-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-Italic.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+@import "contact.css";
+
+/*
+  Create the main styling
+*/
 
 * {
   box-sizing: border-box;
@@ -104,4 +142,29 @@ body {
   .navbar-links.active {
     display: flex;
   }
+}
+
+/*
+  Create the contact styling
+*/
+
+.main {
+  max-width: 1080px;
+  margin: 25px auto !important;
+  padding: 25px;
+  float: none !important;
+  border: #c9c9c9 1px solid;
+  border-radius: 8px;
+}
+
+.main h1 {
+  text-align: center;
+}
+
+.main form {
+  margin: 10px;
+}
+
+.main form input {
+  margin: 10px;
 }
