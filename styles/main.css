@@ -1,3 +1,5 @@
+@import "contact.css";
+
 /*
   List out all of the fonts of the website
 */
@@ -31,8 +33,6 @@
   font-style: italic;
 }
 
-
-@import "contact.css";
 
 /*
   Create the main styling
@@ -167,4 +167,42 @@ body {
 
 .main form input {
   margin: 10px;
+}
+
+.contact-card {
+  width: 600px;
+  height: 500px;
+  margin: 25px auto !important;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  padding: 2rem;
+
+  /* Initialize grid */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+  /* Create four rows.
+   The first two and the last will fill the available space,
+   while the 3rd row (message) is set at 150px */
+  grid-template-rows: 1fr 1fr 150px 1fr;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+.text-container {
+  border: 1px solid blue;
+  /* Span both columns */
+  grid-column: span 2;
+}
+
+.button-container {
+  border: 1px solid orange;
+  /* Span both columns */
+  grid-column: span 2;
 }

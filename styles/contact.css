@@ -1,6 +1,8 @@
-.main {
-    max-width: 200px;
-    margin: 25px auto !important;
-    float: none !important;
-    horiz-align: center;
+.contact-card {
+    width: 600px;
+    height: 500px;
+    border: 1px solid lightgray;
+    border-radius: 1rem;
+    padding: 2rem;
 }
+
