@@ -108,7 +108,7 @@ body {
   height: 3px;
   width: 100%;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 @media (max-width: 660px) {
@@ -154,7 +154,7 @@ body {
   padding: 25px;
   float: none !important;
   border: #c9c9c9 1px solid;
-  border-radius: 8px;
+  border-radius: 1rem;
 }
 
 .main h1 {
@@ -172,8 +172,9 @@ body {
 .contact-card {
   width: 600px;
   height: 500px;
-  margin: 25px auto !important;
+  margin: 1rem auto !important;
   border: 1px solid lightgray;
+  background: white;
   border-radius: 1rem;
   padding: 2rem;
 
@@ -192,17 +193,63 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid red;
 }
 
 .text-container {
-  border: 1px solid blue;
   /* Span both columns */
   grid-column: span 2;
 }
 
 .button-container {
-  border: 1px solid orange;
   /* Span both columns */
   grid-column: span 2;
+  margin: 1.25rem 0 0 0;
+}
+
+.text-container textarea, .input-container input {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0 0 0.2rem 0;
+  overflow: visible;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  border: 2px solid darkgrey;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%
+}
+
+.text-container textarea {
+  resize: none;
+}
+
+.text-container textarea:focus, .input-container input:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgb(255, 209, 209, 0.5);
+}
+
+.contact-card label {
+  padding-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.button-container input {
+  background-color: #e33232 !important;
+  border-width: 0;
+  color: white;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  height: 100%;
+  width: 100%;
+}
+
+.button-container input:hover {
+  border-color: darkred;
+}
+
+.button-container input:focus {
+  outline: none;
+  border-color: darkred;
+  color: lightcoral;
+  box-shadow: 0 0 0 0.125em rgb(255, 209, 209, 0.75);
 }

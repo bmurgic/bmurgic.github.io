@@ -24,17 +24,32 @@
         </ul>
       </div>
     </nav>
-    <div class="contact-card">
       <form>
-        <div class="Contact__Card">
-          <div class="input-container">First name</div>
-          <div class="input-container">Last name</div>
-          <div class="input-container">Email</div>
-          <div class="input-container">Phone</div>
-          <div class="text-container">Message</div>
-          <div class="button-container">Submit button</div>
+        <div class="contact-card">
+          <div class="input-container">
+            <label for="first-name" class="Label">First Name *</label>
+            <input name="first-name" id="first-name" class="Input" type="text" placeholder="John" required>
+          </div>
+          <div class="input-container">
+            <label for="last-name" class="Label">Last Name *</label>
+            <input name="last-name" id="last-name" class="Input" type="text" placeholder="Doe" required>
+          </div>
+          <div class="input-container">
+            <label for="email" class="Label">Email *</label>
+            <input name="email" id="email" class="Input" type="text" placeholder="john.doe@gmail.com" required>
+          </div>
+          <div class="input-container">
+            <label for="phone" class="Label">Phone</label>
+            <input name="phone" id="phone" class="Input" type="text" placeholder="555-555-5555">
+          </div>
+          <div class="text-container">
+            <label for="message" class="Label">Message *</label>
+            <textarea name="message" id="message" placeholder="Enter your message..." required></textarea>
+          </div>
+          <div class="button-container">
+            <input name="submit" id="submit" class="submit" type="submit" value="SUBMIT">
+          </div>
         </div>
       </form>
-    </div>
   </body>
 </html>
