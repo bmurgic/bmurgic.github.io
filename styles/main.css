@@ -145,53 +145,70 @@ body {
 }
 
 /*
-  Create the contact styling
+  Create styling for main content on every page
 */
 
 .main {
-  max-width: 1080px;
-  margin: 25px auto !important;
-  padding: 25px;
+  max-width: 60%;
+  margin: 1.5rem auto !important;
+  padding: 1rem;
   float: none !important;
-  border: #c9c9c9 1px solid;
+  border: 1px solid lightgray;
   border-radius: 1rem;
+  background: white;
 }
 
 .main h1 {
   text-align: center;
 }
 
-.main form {
-  margin: 10px;
+
+/*
+  Create the hobbies page styling
+*/
+
+.hobbies-table {
+  width: 100%;
+  table-layout: fixed;
 }
 
-.main form input {
-  margin: 10px;
+.hobbies-table td {
+  text-align: center;
+  border: black 1px dotted;
 }
+
+.keyboards {
+  background-image: url("../images/jules.jpg");
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*
+  Create the contact styling
+*/
 
 .contact-card {
-  width: 600px;
-  height: 500px;
-  margin: 1rem auto !important;
-  border: 1px solid lightgray;
-  background: white;
-  border-radius: 1rem;
-  padding: 2rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
 
   /* Initialize grid */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-
-  /* Create four rows.
-   The first two and the last will fill the available space,
-   while the 3rd row (message) is set at 150px */
   grid-template-rows: 1fr 1fr 150px 1fr;
 }
 
 @media (max-width: 660px) {
-  .contact-card {
+  .main{
     width: 90%;
+  }
+
+  .contact-card {
+    width: 100%;
   }
 }
 
