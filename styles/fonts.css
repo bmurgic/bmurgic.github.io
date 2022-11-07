@@ -1,3 +1,7 @@
+/*
+  List out all of the fonts of the website
+*/
+
 @font-face {
   font-family: 'Cabin-Sketch';
   src: url('../fonts/Cabin_Sketch/CabinSketch-Regular.ttf') format('truetype');

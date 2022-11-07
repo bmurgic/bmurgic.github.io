@@ -1,8 +1,83 @@
+
+/*
+  Create the contact styling
+*/
+
 .contact-card {
-    width: 600px;
-    height: 500px;
-    border: 1px solid lightgray;
-    border-radius: 1rem;
-    padding: 2rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+
+  /* Initialize grid */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-template-rows: 1fr 1fr 150px 1fr;
 }
 
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-container {
+  /* Span both columns */
+  grid-column: span 2;
+}
+
+.button-container {
+  /* Span both columns */
+  grid-column: span 2;
+  margin: 1.25rem 0 0 0;
+}
+
+.text-container textarea, .input-container input {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0 0 0.2rem 0;
+  overflow: visible;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  border: 2px solid darkgrey;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%
+}
+
+.text-container textarea {
+  resize: none;
+}
+
+.text-container textarea:focus, .input-container input:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgb(255, 209, 209, 0.5);
+}
+
+.contact-card label {
+  padding-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.button-container input {
+  background-color: #e33232 !important;
+  border-width: 0;
+  color: white;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  height: 100%;
+  width: 100%;
+}
+
+.button-container input:hover {
+  border-color: darkred;
+}
+
+.button-container input:focus {
+  outline: none;
+  border-color: darkred;
+  color: lightcoral;
+  box-shadow: 0 0 0 0.125em rgb(255, 209, 209, 0.75);
+}
