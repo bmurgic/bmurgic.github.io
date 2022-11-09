@@ -40,3 +40,26 @@ body {
 .main h1 {
   text-align: center;
 }
+
+.about-me {
+  width: 100%;
+  margin-top: 35px;
+}
+
+.selfie {
+  height: 40vmin;
+  width: 40vmin;
+  float: right;
+  border-radius: 1em;
+  overflow: hidden;
+  margin-left: 15px;
+  margin-top: 15px;
+  box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.35);
+}
+
+.selfie img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.3);
+}

@@ -4,7 +4,6 @@
 */
 
 .contact-card {
-  margin: auto calc(115% - var(--main-width) - 5vmin);
 
   /* Initialize grid */
   display: grid;
