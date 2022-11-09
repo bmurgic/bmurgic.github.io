@@ -2,6 +2,13 @@
   Create the styling for mobile devices
 */
 
+@media (min-width: 768px) {
+  .contact-card {
+    width: calc(768px - 20%);
+    margin: auto;
+  }
+}
+
 @media (hover: hover) {
   .hobby-card:hover .hobby-card-inner {
     transform: rotateY(180deg);
@@ -15,12 +22,12 @@
 }
 
 @media (hover: none) {
-    .hobby-card:hover, .hobby-card:active .hobby-card-inner {
+    .hobby-card:hover, .hobby-card:focus, .hobby-card:active .hobby-card-inner {
       transform: rotateY(180deg);
       transition: all 0.5s ease;
     }
 
-    .hobby-card:hover, .hobby-card:active .hobby-card-title {
+    .hobby-card:hover, .hobby-card:focus, .hobby-card:active .hobby-card-title {
       opacity: 0;
       transition: all 0.5s ease;
     }

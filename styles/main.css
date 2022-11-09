@@ -18,6 +18,7 @@ body {
   background-color: #eee;
   margin: 0;
   padding: 0;
+  --main-width: 95vmin;
 }
 
 .murgic-logo {
@@ -29,8 +30,7 @@ body {
 
 .main {
   margin: 1em auto;
-  width: 95vmin;
-  float: none;
+  width: var(--main-width);
   padding: 1rem;
   border: 1px solid lightgray;
   border-radius: 1rem;
