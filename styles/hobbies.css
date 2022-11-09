@@ -70,21 +70,12 @@
   transition: 0.5s;
 }
 
-.hobby-card-front:hover::before {
-  opacity: 0;
-}
-
 .hobby-card-front, .hobby-card-back {
   border-radius: 1rem;
   position: absolute;
   overflow: hidden;
   width: 100%;
   height: 100%;
-}
-
-.hobby-card:hover .hobby-card-inner {
-  transform: rotateY(180deg);
-  transition: all 0.5s ease;
 }
 
 .hobby-card-front {
@@ -103,11 +94,6 @@
 
 .hobby-card-title {
   opacity: 1;
-  transition: all 0.5s ease;
-}
-
-.hobby-card:hover .hobby-card-title {
-  opacity: 0;
   transition: all 0.5s ease;
 }
 

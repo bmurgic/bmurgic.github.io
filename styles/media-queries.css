@@ -2,6 +2,30 @@
   Create the styling for mobile devices
 */
 
+@media (hover: hover) {
+  .hobby-card:hover .hobby-card-inner {
+    transform: rotateY(180deg);
+    transition: all 0.5s ease;
+  }
+
+  .hobby-card:hover .hobby-card-title {
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+}
+
+@media (hover: none) {
+    .hobby-card:hover, .hobby-card:active .hobby-card-inner {
+      transform: rotateY(180deg);
+      transition: all 0.5s ease;
+    }
+
+    .hobby-card:hover, .hobby-card:active .hobby-card-title {
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
+}
+
 @media (max-width: 768px) {
   #menu-toggle {
     display: flex;
@@ -46,10 +70,5 @@
 
   .hobby-card-back {
     font-size: 2.5vmin;
-  }
-
-  .hobby-card:active .hobby-card-inner {
-    transform: rotateY(180deg);
-    transition: all 0.5s ease;
   }
 }
